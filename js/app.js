@@ -267,6 +267,53 @@ function render() {
       + '<li>It is her learning process working exactly as it should.</li>'
       + '</ul></div></div></div>'
 
+      + '<div class="finding-card">'
+      + '<div class="fc-top" onclick="toggleFC(4)">'
+      + '<img class="fc-img" src="' + IMGS["classroom_wide"] + '" alt=""/>'
+      + '<div class="fc-title-block">'
+      + '<p class="fc-eyebrow">Ganesan (2025)</p>'
+      + '<p class="fc-core">Research identifies specific classroom strategies that help multilingual learners access science content. These aren&#39;t accommodations. They are evidence-based practices that benefit all learners.</p>'
+      + '<p class="fc-citation">Ganesan, U. (2025). Evidence-based teaching interventions for emergent multilingual students in high school science classrooms: a literature review. <em>Discover Education, 4</em>, 41.</p>'
+      + '<p class="fc-expand-hint" id="fc-hint-4">Click to learn more</p>'
+      + '</div></div>'
+      + '<div class="fc-body" id="fc-body-4"><div class="fc-lines"><ul>'
+      + '<li>Translanguaging allows students to draw on their full linguistic repertoire to build conceptual understanding before producing academic English.</li>'
+      + '<li>Think-pair-share gives multilingual learners processing time before public response, significantly increasing participation quality.</li>'
+      + '<li><span class="gterm" onclick="event.stopPropagation();toggleGterm(8)">Culturally responsive pedagogy</span> connects scientific concepts to students&#39; cultural backgrounds and experiences, leading to increased engagement and conceptual understanding.</li>'
+      + '</ul><div class="gdef" id="gdef-8">An approach to teaching that recognizes and incorporates students&#39; cultural backgrounds, experiences, and ways of knowing as assets in the learning process.</div><ul>'
+      + '<li>The 5E instructional model provides a structured framework that supports both content and language development simultaneously for multilingual learners.</li>'
+      + '</ul></div></div></div>'
+
+      + '<div class="finding-card">'
+      + '<div class="fc-top" onclick="toggleFC(5)">'
+      + '<img class="fc-img" src="' + IMGS["teacher_front"] + '" alt=""/>'
+      + '<div class="fc-title-block">'
+      + '<p class="fc-eyebrow">Bunch, Kibler &amp; Pimentel (2013)</p>'
+      + '<p class="fc-core">Making participation expectations explicit is not just good practice. For multilingual learners, it is essential. Students cannot meet expectations they cannot see.</p>'
+      + '<p class="fc-citation">Bunch, G. C., Kibler, A., &amp; Pimentel, S. (2013). Realizing opportunities for English learners in the Common Core English Language Arts and disciplinary literacy standards.</p>'
+      + '<p class="fc-expand-hint" id="fc-hint-5">Click to learn more</p>'
+      + '</div></div>'
+      + '<div class="fc-body" id="fc-body-5"><div class="fc-lines"><ul>'
+      + '<li>A linguistically responsive teaching framework recognizes that language and content are inseparable. Teaching one without the other disadvantages multilingual learners.</li>'
+      + '<li>Teachers must make the language demands of their discipline explicit, not assumed. In science, this means teaching students how to read, write, and talk like scientists.</li>'
+      + '<li>For Mei, Ms. Greene&#39;s participation norms were invisible. She did not know that asking questions out loud was valued. Making that expectation visible changes what is possible.</li>'
+      + '</ul></div></div></div>'
+
+      + '<div class="finding-card">'
+      + '<div class="fc-top" onclick="toggleFC(6)">'
+      + '<img class="fc-img" src="' + IMGS["notes_desk"] + '" alt=""/>'
+      + '<div class="fc-title-block">'
+      + '<p class="fc-eyebrow">Lyon (2023)</p>'
+      + '<p class="fc-core">How we assess understanding shapes who gets to show what they know. For multilingual learners, traditional assessment often measures language proficiency more than content knowledge.</p>'
+      + '<p class="fc-citation">Lyon, E. G. (2023). Reframing formative assessment for emergent bilinguals: Linguistically responsive assessing in science classrooms. <em>Science Education, 107</em>, 203&#8211;233.</p>'
+      + '<p class="fc-expand-hint" id="fc-hint-6">Click to learn more</p>'
+      + '</div></div>'
+      + '<div class="fc-body" id="fc-body-6"><div class="fc-lines"><ul>'
+      + '<li>Linguistically responsive formative assessment separates language proficiency from content understanding, giving multilingual learners multiple ways to demonstrate what they know.</li>'
+      + '<li>Written responses, diagrams, and partner discussions are all valid forms of assessment in science. Privileging only verbal response disadvantages students still developing English fluency.</li>'
+      + '<li>When Ms. Greene asked Mei to share out loud without warning, she was assessing Mei&#39;s in-the-moment English production, not her understanding of photosynthesis. Those are two different things.</li>'
+      + '</ul></div></div></div>'
+
       + '<div style="text-align:right;margin-top:1.5rem;"><button class="btn btn-ghost" onclick="advance()">What you can do differently &#8594;</button></div>'
       + '</div>';
 
@@ -285,6 +332,7 @@ function render() {
       + '<p>Give Mei a moment to write her thoughts down first.</p>'
       + '<p>Then ask her to share with a partner before the whole class.</p>'
       + '<p>This is <span class="gterm" onclick="toggleGterm(6)">think-pair-share</span>. It gives students processing time before performing. For Mei, that small shift changes everything. She isn&#39;t unprepared. She just needs a moment to move from her internal process to an English spoken response.</p>'
+      + '<p style="font-size:12px;color:#bbb;font-family:Arial,sans-serif;margin-top:8px;">Ganesan (2025); Bunch et al. (2013)</p>'
       + '<div class="gdef" id="gdef-6">An instructional strategy where students think individually, discuss with a partner, then share with the class. It lowers the stakes of public participation and gives multilingual learners processing time.</div>'
       + '</div>'
       + '<div id="quiz-block-1" class="quiz-block">'
@@ -310,6 +358,7 @@ function render() {
       + '<p>Ask Mei to write one question she has about the material. Any question.</p>'
       + '<p>Acknowledge that in this class, written questions count just as much as spoken ones.</p>'
       + '<p>This is <span class="gterm" onclick="toggleGterm(7)">translanguaging</span> in practice. Letting students engage in the way that works for their whole self, not just the English speaking part. It also signals to Mei that her way of participating has value here.</p>'
+      + '<p style="font-size:12px;color:#bbb;font-family:Arial,sans-serif;margin-top:8px;">Ganesan (2025); Lyon (2023)</p>'
       + '<div class="gdef" id="gdef-7">A pedagogical approach that allows multilingual learners to draw on their full linguistic repertoire to make meaning and demonstrate understanding.</div>'
       + '</div>'
       + '<div id="quiz-block-2" class="quiz-block">'
@@ -343,6 +392,7 @@ function render() {
       + makeStratCard(4,"Writing is participation","Written questions and responses are just as valid as spoken ones. Making this explicit in your classroom changes what participation looks like for everyone.")
       + makeStratCard(5,"Pause before making assumptions","Before reading a behavior as disengagement, ask yourself what learning norms this student might be bringing from home. Silence and careful note-taking can be signs of deep cultural investment in learning.")
       + makeStratCard(6,"Make content feel familiar","Find entry points into your lesson that connect to students&#39; cultural experiences. When content feels relevant to who they are, engagement follows naturally.")
+      + makeStratCard(7,"Use the 5E model as a framework","1) Engage prior knowledge 2) Explore hands-on 3) Explain with writing before speaking 4) Elaborate across contexts 5) Evaluate through multiple modes. Each stage gives multilingual learners a structured entry point that doesn&#39;t require immediate verbal fluency. (Ganesan, 2025)")
       + '</div>'
       + '<div style="text-align:right;margin-top:1.5rem;"><button class="btn btn-ghost" onclick="advance()">Final reflection &#8594;</button></div>'
       + '</div>';
